@@ -13,10 +13,6 @@
   height: 100%;
 }
 
-.about-me__right {
-  flex: 1;
-}
-
 .about-me__left-card {
   width: 60%;
   height: 70vh;
@@ -36,4 +32,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.about-me__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.about-me__right-title {
+  font-size: 30px;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-start;
 }
