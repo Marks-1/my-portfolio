@@ -71,6 +71,10 @@
   align-items: center;
 }
 
+.my-intro__left--wrapper__desc {
+  font-size: 18px;
+}
+
 .my-intro__right {
   flex: 1;
   position: relative;

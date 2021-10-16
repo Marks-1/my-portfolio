@@ -1,0 +1,39 @@
+.about-me {
+  display: flex;
+  height: 100vh;
+}
+
+.about-me__left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background-color: blue; */
+  height: 100%;
+}
+
+.about-me__right {
+  flex: 1;
+}
+
+.about-me__left-card {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-me__left-card__bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: red;
+}
+
+.about-me__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
