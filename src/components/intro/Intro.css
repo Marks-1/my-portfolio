@@ -19,9 +19,6 @@
   justify-content: center;
   align-items: center;
 }
-.my-intro__right {
-  flex: 1;
-}
 
 .my-intro__left--wrapper {
   padding: 50px;
@@ -51,16 +48,16 @@
 }
 
 @keyframes move {
-  25%{
+  25% {
     transform: translateY(-50px);
   }
-  50%{
+  50% {
     transform: translateY(-100px);
   }
-  75%{
+  75% {
     transform: translateY(-150px);
   }
-  100%{
+  100% {
     transform: translateY(-200px);
   }
 }
@@ -72,4 +69,26 @@
   color: #59b256;
   display: flex;
   align-items: center;
+}
+
+.my-intro__right {
+  flex: 1;
+  position: relative;
+}
+
+.my-intro__right--bg {
+  clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #59b256;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.my-intro__right--img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
 }

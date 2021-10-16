@@ -1,6 +1,6 @@
 import React from 'react'
 import './Intro.css'
-import mark from '../../images/mark.svg';
+import mark from './images/mark.svg';
 
 
 const Intro = () =>{
@@ -28,7 +28,10 @@ const Intro = () =>{
           </div>
         </div>
       </div>
-      <div className="my-intro__right"><img src={mark} alt="mark-image" /></div>
+      <div className="my-intro__right">
+        <div className="my-intro__right--bg"></div>
+        <img src={mark} alt="mark-image" className="my-intro__right--img" />
+      </div>
     </div>
   );
 }
