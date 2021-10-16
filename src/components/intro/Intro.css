@@ -8,6 +8,68 @@
   font-size: 62.5%;
 }
 
-body {
-  background-color: aqua;
+.my-intro {
+  display: flex;
+  height: 100vh;
+}
+
+.my-intro__left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-intro__right {
+  flex: 1;
+}
+
+.my-intro__left--wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+.my-intro__left--wrapper__greet {
+  font-size: 30px;
+  font-weight: 300;
+}
+.my-intro__left--wrapper__name {
+  font-size: 60px;
+}
+
+.my-intro__left--wrapper__title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.my-intro__left--wrapper__title--wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out alternate infinite;
+}
+
+@keyframes move {
+  25%{
+    transform: translateY(-50px);
+  }
+  50%{
+    transform: translateY(-100px);
+  }
+  75%{
+    transform: translateY(-150px);
+  }
+  100%{
+    transform: translateY(-200px);
+  }
+}
+
+.my-intro__left--wrapper__title--wrapper__item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #59b256;
+  display: flex;
+  align-items: center;
 }
